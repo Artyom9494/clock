@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    min-height: 100vh;
+}
+
+.clock{
+width: 400px;
+height: 400px;
+display: flex;
+justify-content: center;
+align-items: center;
+background: url(dial-34139_960_720.png);
+background-size: cover;
+box-shadow: 0 -15px 15px rgba(161, 161, 161, 0.349), 
+            inset 0 -9px 9px rgba(251, 227, 92, 0.219),
+            0 15px 15px rgba(161, 161, 161, 0.349), 
+            inset 0 9px 9px rgba(251, 227, 92, 0.219);
+border-radius: 50%;
+}
+.clock:before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    z-index: 999;
+}
+.clock .hour, .clock .min, .clock .sec{
+    position: absolute;
+}
+.clock, .hour, .hr{
+    width: 400px;
+    height: 400px;
+}
+.clock, .min, .mi{
+    width: 400px;
+    height: 400px;
+}
+.clock, .sec, .sc{
+    width: 400px;
+    height: 400px;
+}
+.hr, .mi, .sc{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+}
+.hr:before{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 60px;
+    background-color: rgb(255, 238, 0);
+    z-index: 10;
+    border-radius: 20px;
+}
+
+
+.mi:before{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 90px;
+    background-color: rgb(111, 253, 55);
+    z-index: 11;
+    border-radius: 20px;
+}
+
+.sc:before{
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 120px;
+    background-color: rgb(55, 164, 253);
+    z-index: 12;
+    border-radius: 20px;
+}
+
